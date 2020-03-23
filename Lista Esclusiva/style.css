@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: 'Rubik', sans-serif;
+}
+/* ***************************BARRA FIXED TOP*************************+ */
+.robaTop{
+  /* ci ancoro la navbarTop fixed */
+  position: relative;
+  width: 100%;
+}
+.navbarTop{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.navbarTop img{
+  height: 60px;
+  margin-left: 20px;
+}
+
+.navbarTop ul{
+  width: 44%;
+  color: #1b3c59;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbarTop ul li button{
+  padding: 10px 35px;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  border: none;
+  background-color: #61ce4e;
+}
+
+/********************************************** RESTO DEL SITO **************************+************ */
+.corpoSito{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 300px); /* tolgo le dimensioni della barra fixed e del footer */
+  margin-top: 80px;
+}
+h1 {
+  background-color: white;
+  padding: 25px;
+  box-shadow: 10px 15px 10px gray;
+  border: 1px solid darkgray;
+  color: #1b3c59;
+  border-radius: 10px;
+  width: 35%;
+  text-align: center;
+}
+
+/* ************************************** FOOTER *********************************** */
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: #1b3c59;
+  overflow: hidden;
+}
+
+footer img {
+  height: 220px;
+  background-color: red;
+  position: relative;
+  animation-name: ioSonoBool;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  filter: grayscale(1);
+  transition: all 0.2s;
+}
+@keyframes ioSonoBool {
+  0%   {left:10%; top:0px;}
+  50%  {left: 80%;top:0px;}
+  100%  {left:10%;top:0px;}
+}
+footer img:hover {
+  filter: grayscale(0);
+}
