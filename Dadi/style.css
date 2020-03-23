@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: gold;
+  border: 20px dotted blue;
+}
+
+h1 {
+  background-color: #75151e;
+  padding: 25px;
+  border: 8px dotted yellow;
+  color: lightblue;
+  border-radius: 30px;
+  width: 300px;
+}
